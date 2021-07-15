@@ -37,8 +37,8 @@ class TiposUsuarioDeletarHandler extends HandlerAbstract implements RequestHandl
                 'Erro ao deletar o tipo de usuário!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

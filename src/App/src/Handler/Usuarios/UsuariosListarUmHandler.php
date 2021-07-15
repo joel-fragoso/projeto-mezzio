@@ -46,8 +46,8 @@ class UsuariosListarUmHandler extends HandlerAbstract implements RequestHandlerI
                 "Erro ao listar o usuário com o id {$id}",
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

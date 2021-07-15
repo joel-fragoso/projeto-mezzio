@@ -14,15 +14,15 @@ use Psr\Container\ContainerInterface;
 abstract class HandlerAbstract
 {
     /** @var ContainerInterface */
-    protected $contianer;
+    protected $container;
 
     /**
      * HandlerAbstract construtor
-     * @param ContainerInterface $contianer
+     * @param ContainerInterface $container
      */
-    public function __construct(ContainerInterface $contianer)
+    public function __construct(ContainerInterface $container)
     {
-        $this->contianer = $contianer;
+        $this->container = $container;
     }
 
     /**

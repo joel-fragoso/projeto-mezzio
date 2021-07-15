@@ -11,7 +11,7 @@ use Laminas\Hydrator\ClassMethodsHydrator;
  * TiposUsuario
  *
  * @ORM\Table(name="tipos_usuario")
- * @ORM\Entity(repositoryClass="App\Repository\TiposUsuarioRepository)
+ * @ORM\Entity(repositoryClass="App\Repository\TiposUsuarioRepository")
  */
 class TiposUsuario
 {
@@ -60,8 +60,7 @@ class TiposUsuario
     private ?\DateTime $deletadoEm = null;
 
     /**
-     * Construtor da class
-     *
+     * TiposUsuario constructor.
      * @param array $data
      */
     public function __construct(array $data = [])

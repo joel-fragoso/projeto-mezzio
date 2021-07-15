@@ -35,11 +35,11 @@ class MensagensDeletarHandler extends HandlerAbstract implements RequestHandlerI
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                "Erro ao deletar a mensagem com id {$id}",
+                "Erro ao deletar a mensagem com o id {$id}",
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

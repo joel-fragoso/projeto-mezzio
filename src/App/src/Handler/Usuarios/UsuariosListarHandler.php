@@ -38,8 +38,8 @@ class UsuariosListarHandler extends HandlerAbstract implements RequestHandlerInt
                 'Erro ao listar os usuários!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

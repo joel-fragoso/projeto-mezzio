@@ -46,8 +46,8 @@ class TiposUsuarioListarUmHandler extends HandlerAbstract implements RequestHand
                 "Erro ao listar o tipo de usuário com o id {$id}",
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

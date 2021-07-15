@@ -27,19 +27,19 @@ class MensagensAlterarHandler extends HandlerAbstract implements RequestHandlerI
             $data = Json::decode($request->getBody()->getContents(), JSON_OBJECT_AS_ARRAY);
             $data['id'] = (int) $request->getAttribute('id');
 
-            $service = $this->contianer->get(MensagensService::class);
+            $service = $this->container->get(MensagensService::class);
 
-            $mensagem = $service->update($data);
+            $message = $service->update($data);
 
-            $response = $this->successResponse($mensagem);
+            $response = $this->successResponse($message);
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
                 'Erro ao alterar os dados da mensagem!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

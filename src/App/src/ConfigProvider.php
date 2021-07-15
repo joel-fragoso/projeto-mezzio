@@ -48,7 +48,7 @@ class ConfigProvider
                 Handler\Usuarios\UsuariosAlterarHandler::class => Handler\Factory\UsuariosAlterarHandlerFactory::class,
                 Handler\Usuarios\UsuariosDeletarHandler::class => Handler\Factory\UsuariosDeletarHandlerFactory::class,
                 Handler\Mensagens\MensagensListarHandler::class => Handler\Factory\MensagensListarHandlerFactory::class,
-                Handler\Mensagens\MensagensListarUmHandler::class => Handler\Factory\MensagensListarUmHandlerFactory::class,
+                Handler\Mensagens\MensagensListarUmaHandler::class => Handler\Factory\MensagensListarUmaHandlerFactory::class,
                 Handler\Mensagens\MensagensCriarHandler::class => Handler\Factory\MensagensCriarHandlerFactory::class,
                 Handler\Mensagens\MensagensAlterarHandler::class => Handler\Factory\MensagensAlterarHandlerFactory::class,
                 Handler\Mensagens\MensagensDeletarHandler::class => Handler\Factory\MensagensDeletarHandlerFactory::class,

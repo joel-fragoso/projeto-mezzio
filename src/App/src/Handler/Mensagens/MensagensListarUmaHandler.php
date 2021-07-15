@@ -11,10 +11,10 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
 /**
- * Class MensagensListarUmHandler
+ * Class MensagensListarUmaHandler
  * @package App\Handler\Mensagens
  */
-class MensagensListarUmHandler extends HandlerAbstract implements RequestHandlerInterface
+class MensagensListarUmaHandler extends HandlerAbstract implements RequestHandlerInterface
 {
     /**
      * @param ServerRequestInterface $request
@@ -43,11 +43,11 @@ class MensagensListarUmHandler extends HandlerAbstract implements RequestHandler
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                "Erro ao listar a mensagem com id {$id}",
+                "Erro ao listar a mensagem com o id {$id}",
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

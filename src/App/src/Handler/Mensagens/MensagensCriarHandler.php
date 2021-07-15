@@ -28,17 +28,17 @@ class MensagensCriarHandler extends HandlerAbstract implements RequestHandlerInt
 
             $service = $this->container->get(MensagensService::class);
 
-            $mensagem = $service->insert($data);
+            $message = $service->insert($data);
 
-            $response = $this->successResponse($mensagem, 201);
+            $response = $this->successResponse($message, 201);
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Erro ao criar uma nova mensagem!',
+                'Erro ao criar um novo registro de mensagem!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

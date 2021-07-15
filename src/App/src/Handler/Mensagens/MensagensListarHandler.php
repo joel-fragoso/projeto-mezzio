@@ -35,11 +35,11 @@ class MensagensListarHandler extends HandlerAbstract implements RequestHandlerIn
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Erro ao listar as mensagens',
+                'Erro ao listar todas as mensagens',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

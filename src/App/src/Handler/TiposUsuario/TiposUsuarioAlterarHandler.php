@@ -38,8 +38,8 @@ class TiposUsuarioAlterarHandler extends HandlerAbstract implements RequestHandl
                 'Erro ao alterar os dados do tipo usuário!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

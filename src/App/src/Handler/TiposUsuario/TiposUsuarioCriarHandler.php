@@ -37,8 +37,8 @@ class TiposUsuarioCriarHandler extends HandlerAbstract implements RequestHandler
                 'Erro ao criar o tipo de usuário!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

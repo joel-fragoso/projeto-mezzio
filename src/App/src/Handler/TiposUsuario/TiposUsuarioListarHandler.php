@@ -23,7 +23,7 @@ class TiposUsuarioListarHandler extends HandlerAbstract implements RequestHandle
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         try {
-            $service = $this->contianer->get(TiposUsuarioService::class);
+            $service = $this->container->get(TiposUsuarioService::class);
 
             $resultWithoutDQL = $service->getAll();
             $resultWithDQL = $service->getAllWithDQL();
@@ -34,8 +34,8 @@ class TiposUsuarioListarHandler extends HandlerAbstract implements RequestHandle
             ]);
         } catch (\Exception $e) {
             $response = $this->errorResponse($e, 'Erro ao listar tipos de usuário', 400);
-
-            return $response;
         }
+
+        return $response;
     }
 }

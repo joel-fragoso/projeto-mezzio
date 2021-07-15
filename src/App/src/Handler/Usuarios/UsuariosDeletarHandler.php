@@ -38,8 +38,8 @@ class UsuariosDeletarHandler extends HandlerAbstract implements RequestHandlerIn
                 "Erro ao deletar o usuário com o id {$id}",
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

@@ -38,8 +38,8 @@ class UsuariosAlterarHandler extends HandlerAbstract implements RequestHandlerIn
                 'Erro ao alterar os dados do usuário!',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }

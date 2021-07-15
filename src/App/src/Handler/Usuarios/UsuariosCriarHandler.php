@@ -26,7 +26,7 @@ class UsuariosCriarHandler extends HandlerAbstract implements RequestHandlerInte
         try {
             $data = Json::decode($request->getBody()->getContents(), JSON_OBJECT_AS_ARRAY);
 
-            $service = $this->contianer->get(UsuariosService::class);
+            $service = $this->container->get(UsuariosService::class);
 
             $user = $service->insert($data);
 
@@ -37,8 +37,8 @@ class UsuariosCriarHandler extends HandlerAbstract implements RequestHandlerInte
                 'Erro ao criar um novo usuário',
                 400
             );
-
-            return $response;
         }
+
+        return $response;
     }
 }
